@@ -1,0 +1,268 @@
+.section-cards{
+    position: relative;
+    flex: 1;
+    width: 812px;
+}
+
+.section-cards h2{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.section-cards h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter';
+    margin-bottom: 0;
+    margin-left: 18px;
+}
+
+@media (max-width: 714px){
+    .section-cards{
+        width: 100%;
+    }
+}
+
+.section-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 0px 16px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1049px){
+    .section-cards-container{
+        flex-direction: column;
+    }
+}
+
+.talhao-cards-hide{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1049px){
+    .talhao-cards-hide{
+        flex-direction: column;
+    }
+}
+
+.section-card{
+    position: relative;
+}
+
+.section-card h2{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.section-card-links{
+    width: 380px;
+    margin: 0px 10px 0px 0px;
+    flex-direction: row;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 1px #d4d4d499;
+    margin-top: 21px;
+}
+
+@media (max-width: 1049px){
+    .section-card-links{
+        width: 100%;
+    }
+}
+
+@media (max-width: 714px){
+    .section-card-links{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.section-card-links p{
+    padding: 10px;
+}
+
+.section-card-links img{
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    column-gap: 8px;
+    left: 0;
+}
+
+@media (max-width: 714px){
+    .images{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*--------------------  talhão Headers -------------------*/
+
+.section-navcard{
+    position: relative;
+}
+
+@media (max-width: 1049px){
+    .section-navcard{
+        width: 100%;
+    }
+}
+
+.section-navcard h1{
+    margin-top: 10px;
+    margin-bottom: -30px;
+    margin-left: 0;
+}
+
+.section-navcard-links{
+    background-color: #fff;
+    display: flex;
+    border-radius: 8px;
+    width: 791px;
+    height: 88px;
+    margin: 0px 0 16px;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px 1px #d4d4d499;
+}
+
+@media (max-width: 1049px){
+    .section-navcard-links{
+        width: 432px;
+    }
+    .divisor-navcard-mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 714px){
+    .section-navcard-links{
+        width: 100%;
+    }
+    .divisor-navcard-mobile{
+        display: none;
+    }
+}
+
+.divisor-navcard-mobile{
+    display: none;
+    background-color: #e0e0e0;
+    height: 88px;
+    width: 1px;
+    margin: 0 20px 0 120px;
+}
+
+.navcard-link-1 h3{
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #20252b;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Inter';
+}
+
+.navcard-link-1{
+    padding: 10px;
+}
+
+span{
+    color: #798aa4;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+.side-baloom{
+    font-size: 12px;
+    text-transform: none;
+    border: 1px solid;
+    font-weight: 400;
+    color: #798aa4;
+    border-color: #e0e0e0;
+    border-radius: 13%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.plantado{
+    color: #57760A;
+    border: 1px solid #57760A;
+    font-size: 12px;
+    font-weight: bold;
+    width: 65px;
+    height: 18px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 0;
+}
+
+.navcard-link-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 200px;
+}
+
+@media (max-width: 1049px){
+    .navcard-link-2{
+        display: none;
+    }
+}
+
+.info-link-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-1{
+    margin-right: 40px;
+}
+
+.info-1 p{
+    color: #20252B;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.info-2 p{
+    color: #798aa4;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+
+.navcard-link-3 i{
+    font-size: 40px;
+    color: #798aa4;
+    margin-left: -90px;
+}
+
+.navcard-link-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisor-navcard{
+    background-color: #e0e0e0;
+    height: 88px;
+    width: 1px;
+    margin: 0 20px 0 20px;
+}
+

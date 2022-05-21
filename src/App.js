@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+
+import React from 'react'
 import './App.css';
+import { QueryClientProvider, QueryClient } from 'react-query';
+import Main from './components/Main/renderMain';
+import { NotesContextProvider } from './context/notesContext';
+import { ContentDetailsContextProvider } from './context/ContentDetailsContext';
+import { PlantationsContextProvider } from './context/plantationsContext';
+import { FarmContextProvider } from './context/farmContext';
 
 function App() {
+
+  const queryClient = new QueryClient();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <ContentDetailsContextProvider>
+        <FarmContextProvider>
+          <PlantationsContextProvider>
+            <NotesContextProvider>
+              <Main />
+            </NotesContextProvider>
+          </PlantationsContextProvider>
+        </FarmContextProvider>
+      </ContentDetailsContextProvider>
+    </QueryClientProvider>
+     
+    
+  
+    
   );
 }
 

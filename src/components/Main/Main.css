@@ -1,0 +1,36 @@
+main{
+    display: flex;
+    flex: 1;
+    background-color: #f5f6fa;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wrapper{
+    padding: 0 16px;
+    left: 143px;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1050px){
+    .wrapper{
+        width: 1050px;
+    }
+}
+
+@media (max-width: 1049px){
+    .wrapper{
+        width: 704px;
+    }
+}
+
+@media (max-width: 714px){
+    .wrapper{
+        width: 100%;
+        flex-direction: column;
+    }
+}
