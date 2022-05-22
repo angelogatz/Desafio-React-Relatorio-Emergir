@@ -3,11 +3,8 @@ import logoFarmbox from '../../assets/logo-fb.png'
 import { useContext } from 'react'
 import { ContentDetailsContext } from '../../context/ContentDetailsContext';
 
-
 const Header = () => {
   const { dataContentDetails } = useContext(ContentDetailsContext);
-
-  // console.log(dataContentDetails)
 
   if(!dataContentDetails) return null
 

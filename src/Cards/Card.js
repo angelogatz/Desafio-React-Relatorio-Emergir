@@ -1,5 +1,3 @@
-
-
 const Card = ({nota}) => {
 
   return (

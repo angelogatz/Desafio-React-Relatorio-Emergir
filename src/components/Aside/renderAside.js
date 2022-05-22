@@ -4,27 +4,19 @@ import { ContentDetailsContext } from "../../context/ContentDetailsContext"
 import { PlantationsContext } from "../../context/plantationsContext"
 import { FarmContext } from "../../context/farmContext"
 
-
 const Aside = () => {
 
     const { dataContentDetails } = useContext(ContentDetailsContext)
     const { plotsRainFall } = useContext(FarmContext)
     const { dataPlantations } = useContext(PlantationsContext)
 
-
-
-
-
     const handlePrint = () => {
         window.print()
     }
 
-    // if(!dataFarm && !dataPlantations && !dataContentDetails) return null
-
    return (
         
     <aside className="sidebar">
-        
         <div className="sidebar-container">
             <div className="sidebar-container-links-top">
                 <h2>Fazenda</h2>
@@ -76,9 +68,7 @@ const Aside = () => {
             <div className="divisor"></div>
             <button onClick={handlePrint} className="btn btn-printer"><i className="fa-solid fa-print"></i>imprimir</button>
         </div>
-        
     </aside>
-        
   )
 }
 

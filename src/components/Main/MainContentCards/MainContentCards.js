@@ -1,9 +1,8 @@
 
 import PlantationsFarmCards from '../PlantationsFarmCards/PlantationsFarmCards'
-import TalhoesNavcards from '../TalhoesNavcards/TalhoesNavcards'
+import TalhoesNavcards from '../TalhoesNavcards/DataHeaderTalhao'
 
 import './MainContentCards.css'
-
 
 const MainContentCards = () => {
   return (
@@ -16,10 +15,6 @@ const MainContentCards = () => {
         <div className="section-cards-container section-navcard">
             <TalhoesNavcards />
         </div>
-
-        {/* <div className="section-cards-container">
-            
-        </div> */}
     </section>
   )
 }

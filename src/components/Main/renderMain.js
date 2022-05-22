@@ -3,7 +3,6 @@ import Header from '../Header/renderHeader'
 import './Main.css'
 import MainContentCards from './MainContentCards/MainContentCards'
 
-
 const Main = () => {
   return (
     <>

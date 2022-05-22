@@ -24,10 +24,6 @@ function App() {
         </FarmContextProvider>
       </ContentDetailsContextProvider>
     </QueryClientProvider>
-     
-    
-  
-    
   );
 }
 
