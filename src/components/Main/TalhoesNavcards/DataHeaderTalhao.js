@@ -4,7 +4,11 @@ import { PlantationsContext } from '../../../context/plantationsContext'
 
 export const TalhoesNavcards = () => {
 
-    const { dataPlantations } = useContext(PlantationsContext)
+    const { dataPlantations, loading, error } = useContext(PlantationsContext)
+
+    if(loading === "loading"){
+
+    }
 
     if(!dataPlantations) return null
 

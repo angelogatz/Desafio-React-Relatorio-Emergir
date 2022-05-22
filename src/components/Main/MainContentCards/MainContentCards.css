@@ -38,6 +38,12 @@
     }
 }
 
+@media (max-width: 714px){
+    .section-cards-container{
+        width: 100%;
+    }
+}
+
 .talhao-cards-hide{
     display: flex;
     position: relative;
@@ -53,6 +59,18 @@
 
 .section-card{
     position: relative;
+}
+
+@media (max-width: 1049px){
+    .section-card{
+        width: 432px;
+    }
+}
+
+@media (max-width: 714px){
+    .section-card{
+        width: 100%;
+    }
 }
 
 .section-card h2{

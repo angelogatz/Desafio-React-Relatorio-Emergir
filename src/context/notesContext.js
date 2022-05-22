@@ -11,7 +11,7 @@ export const NotesContextProvider = ({children}) => {
 
     const url = `${justCors}https://farmbox.cc/api/public/technical_visit_report/notes.json?token=${token}` 
 
-    const { data: dataNotes, isLoading } = useQuery("notes", () => fetchData(url), { refetchIntervalInBackground: true, refetchInterval: 60000 });
+    const { data: dataNotes, isLoading: notesContextIsLoading, error } = useQuery("notes", () => fetchData(url), { refetchIntervalInBackground: true, refetchInterval: 60000 });
 
     const notesFarm = [];
     const notesPlantations = [];
@@ -29,7 +29,7 @@ export const NotesContextProvider = ({children}) => {
     })
 
     return (
-        <NotesContext.Provider value={{notesFarm, notesPlantations, isLoading}}>
+        <NotesContext.Provider value={{notesFarm, notesPlantations, error, notesContextIsLoading}}>
             {children}
         </NotesContext.Provider>
     )

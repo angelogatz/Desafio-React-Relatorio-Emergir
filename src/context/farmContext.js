@@ -9,10 +9,10 @@ export const FarmContext = createContext()
 
 export const FarmContextProvider = ({children}) => {
 
-    const { data: plotsRainFall, isLoading } = useQuery("farm", () => fetchData(`${justCors}https://farmbox.cc/api/public/technical_visit_report/farm.json?token=${token}`), { refetchIntervalInBackground: true, refetchInterval: 60000 });
+    const { data: plotsRainFall, isLoading: farmContextIsLoading, error } = useQuery("farm", () => fetchData(`${justCors}https://farmbox.cc/api/public/technical_visit_report/farm.json?token=${token}`), { refetchIntervalInBackground: true, refetchInterval: 60000 });
 
     return (
-        <FarmContext.Provider value={{plotsRainFall, isLoading}}>
+        <FarmContext.Provider value={{plotsRainFall, farmContextIsLoading, error}}>
             {children}
         </FarmContext.Provider>
     )

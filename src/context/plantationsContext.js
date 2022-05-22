@@ -11,10 +11,10 @@ export const PlantationsContextProvider = ({children}) => {
 
     const url = `${justCors}https://farmbox.cc/api/public/technical_visit_report/plantations.json?token=${token}`    
 
-    const { data: dataPlantations, isLoading } = useQuery("plantations", () => fetchData(url), { refetchIntervalInBackground: true, refetchInterval: 60000 });
+    const { data: dataPlantations, isLoading: plantationsContextIsLoading, error } = useQuery("plantations", () => fetchData(url), { refetchIntervalInBackground: true, refetchInterval: 60000 });
 
     return (
-        <PlantationsContext.Provider value={{dataPlantations, isLoading}}>
+        <PlantationsContext.Provider value={{dataPlantations, error, plantationsContextIsLoading}}>
             {children}
         </PlantationsContext.Provider>
     )
