@@ -1,6 +1,9 @@
 import './Error.css'
 
 const Error = () => {
+
+  console.log("Algo deu errado na Fetch dos dados")
+
   return (
     <>
       <div className="error">

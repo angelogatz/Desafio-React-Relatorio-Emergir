@@ -1,6 +1,7 @@
 import { useContext } from 'react'
-import RenderCard from '../../../Cards/renderCard'
+
 import { NotesContext } from '../../../context/notesContext'
+import RenderCard from '../../Cards/renderCard'
 
 const RenderAllNotes = () => {
 

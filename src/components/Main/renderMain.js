@@ -11,7 +11,6 @@ import Loading from '../Loading/Loading'
 import RenderCardsSection from './CardsSection/renderCardsSection'
 import './renderMain.css'
 
-
 const Main = () => {
 
   const { 
@@ -50,7 +49,7 @@ const Main = () => {
     <>
     {dataIsLoading ?
     (<Loading /> ) :
-    dataError ? <Error /> :
+    dataError ? ( <Error error={dataError} />) :
       (<>
         <Header />  
         <main className='main'>

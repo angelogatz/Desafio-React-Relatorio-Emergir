@@ -1,4 +1,4 @@
-import "./aside.css"
+import "./renderAside.css"
 import { useContext } from "react"
 import { ContentDetailsContext } from "../../context/ContentDetailsContext"
 import { PlantationsContext } from "../../context/plantationsContext"

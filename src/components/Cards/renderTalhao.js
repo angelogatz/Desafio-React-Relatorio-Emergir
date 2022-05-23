@@ -1,5 +1,6 @@
 import { useContext, useState } from "react"
-import { NotesContext } from "../context/notesContext"
+import { NotesContext } from "../../context/notesContext"
+
 import Card from "./renderCard"
 
 const RenderTalhao = ({ id, header, index}) => {
