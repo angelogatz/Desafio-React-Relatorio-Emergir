@@ -1,4 +1,4 @@
-const Card = ({nota}) => {
+const RenderCard = ({nota}) => {
 
   return (
     <div key={nota.id} className="section-card">
@@ -16,4 +16,4 @@ const Card = ({nota}) => {
   )
 }
 
-export default Card
+export default RenderCard

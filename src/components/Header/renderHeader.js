@@ -1,4 +1,4 @@
-import './Header.css'
+import './renderHeader.css'
 import logoFarmbox from '../../assets/logo-fb.png'
 import { useContext } from 'react'
 import { ContentDetailsContext } from '../../context/ContentDetailsContext';

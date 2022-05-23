@@ -11,7 +11,10 @@ const Aside = () => {
     const { dataPlantations } = useContext(PlantationsContext)
 
     const handlePrint = () => {
+        const btn = document.querySelector(".btn")
+        btn.style.display = "none"
         window.print()
+        btn.style.display = ""
     }
 
    return (
@@ -22,7 +25,7 @@ const Aside = () => {
                 <h2>Fazenda</h2>
                 <h3>{dataContentDetails?.farm.name}</h3>
                 <span>{dataPlantations?.results.length + plotsRainFall?.plots}Talhões</span>
-                <iframe src="https://maps.google.com/maps?q=checkplant&t=&z=19&ie=UTF8iwloc=&output=embed" frameBorder="0" scrolling="0" marginHeight="0" marginWidth="0" style={{width: "200px"}} ></iframe>
+                <iframe className="maps-google" src="https://maps.google.com/maps?q=checkplant&t=&z=19&ie=UTF8iwloc=&output=embed" frameBorder="0" scrolling="0" marginHeight="0" marginWidth="0" ></iframe>
                 <div className="divisor-top"></div>
             </div>
             <div className="sidebar-container-links-meio">

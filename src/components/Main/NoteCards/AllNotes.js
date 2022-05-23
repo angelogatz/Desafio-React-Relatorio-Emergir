@@ -1,9 +1,8 @@
-import './PlantationsFarmCards.css'
 import { useContext } from 'react'
-import Card from '../../../Cards/Card'
+import RenderCard from '../../../Cards/renderCard'
 import { NotesContext } from '../../../context/notesContext'
 
-const MainContentFarmCards = () => {
+const RenderAllNotes = () => {
 
   const { notesFarm } = useContext(NotesContext)
 
@@ -12,10 +11,10 @@ const MainContentFarmCards = () => {
   return (
     <>
       {notesFarm.map((note) => (
-        <Card nota={note} />
+        <RenderCard nota={note} />
         ))}
     </>
   )
 }
 
-export default MainContentFarmCards
+export default RenderAllNotes

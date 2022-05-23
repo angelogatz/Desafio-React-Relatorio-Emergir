@@ -1,8 +1,8 @@
 import { useContext, useState } from "react"
 import { NotesContext } from "../context/notesContext"
-import Card from "./Card"
+import Card from "./renderCard"
 
-const TalhaoNavcard = ({ id, header, index}) => {
+const RenderTalhao = ({ id, header, index}) => {
 
     const { notesPlantations } = useContext(NotesContext)
     
@@ -54,4 +54,4 @@ const TalhaoNavcard = ({ id, header, index}) => {
   )
 }
 
-export default TalhaoNavcard
+export default RenderTalhao

@@ -1,10 +1,11 @@
 import { useContext } from 'react'
-import TalhaoNavcard from '../../../Cards/HeaderTalhaoNavcards'
+import RenderTalhao from '../../../Cards/renderTalhao'
+
 import { PlantationsContext } from '../../../context/plantationsContext'
 
-export const TalhoesNavcards = () => {
+export const RenderTalhaoHeader = () => {
 
-    const { dataPlantations, loading, error } = useContext(PlantationsContext)
+    const { dataPlantations, loading} = useContext(PlantationsContext)
 
     if(loading === "loading"){
 
@@ -15,10 +16,10 @@ export const TalhoesNavcards = () => {
   return (
     <>
         {dataPlantations.results.map((header, index) => (
-            <TalhaoNavcard id={header.id} header={header} index={index} />
+            <RenderTalhao id={header.id} header={header} index={index} />
         ))}
     </>
   )
 }
 
-export default TalhoesNavcards
+export default RenderTalhaoHeader
